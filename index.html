@@ -38,7 +38,30 @@
       border: 1px solid #333;
       padding: 20px;
     }
-  </style>
+  </style><style>
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.produto {
+  background: #111;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #000;
+}
+</style>
+
 </head>
 <body>
 

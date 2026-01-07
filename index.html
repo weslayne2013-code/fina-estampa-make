@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>Fina Estampa Make & Acessórios</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <style>
     body {
       margin: 0;
@@ -12,57 +13,74 @@
       color: #fff;
       text-align: center;
     }
+
     header, footer {
       padding: 20px;
       border-bottom: 1px solid #333;
     }
+
     footer {
       border-top: 1px solid #333;
       border-bottom: none;
+      font-size: 14px;
+      opacity: 0.8;
     }
+
+    section {
+      padding: 40px 20px;
+    }
+
     button {
       background: #c9a24d;
       border: none;
       padding: 12px 20px;
-      font-size: 16px;
+      font-size: 15px;
       cursor: pointer;
       margin-top: 10px;
+      border-radius: 6px;
     }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    /* PRODUTOS */
     .produtos {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: 0 auto;
     }
+
     .produto {
+      background: #111;
+      padding: 18px;
+      border-radius: 14px;
       border: 1px solid #333;
-      padding: 20px;
     }
-  </style><style>
-.produtos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
 
-.produto {
-  background: #111;
-  padding: 15px;
-  border-radius: 12px;
-  text-align: center;
-}
+    .produto img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      background: #000;
+    }
 
-.produto img {
-  width: 100%;
-  height: auto;
-  max-height: 250px;
-  object-fit: contain;
-  border-radius: 10px;
-  background: #000;
-}
-</style>
+    .produto h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
 
+    .produto p {
+      font-size: 16px;
+      margin: 0 0 10px;
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
@@ -79,28 +97,37 @@
 </section>
 
 <section class="produtos">
+
+  <!-- PRODUTO 1 -->
   <div class="produto">
+    <img src="PALETA-SOMBRANCELHA-MELU.webp" alt="Paleta para Sobrancelha Melu">
+    <h3>Paleta para Sobrancelha Melu</h3>
+    <p>R$ 10,00</p>
+    <button onclick="window.open('https://wa.me/5564992187764?text=Tenho interesse na Paleta para Sobrancelha Melu')">
+      Comprar
+    </button>
+  </div>
 
-<div class="produto">
-  <img src="PALETA-SOMBRANCELHA-MELU.webp" alt="PALETA-SOMBRANCELHA-MELU.webp">
-  <h3>Paleta para Sobrancelha Melu</h3>
-  <p>R$ 10,00</p>
-  <button onclick="window.open('https://wa.me/5564992187764?text=Tenho interesse na Paleta para Sobrancelha Melu')">
-    Comprar
-  </button>
-</div>
-
-
-
+  <!-- PRODUTO 2 -->
+  <div class="produto">
+    <img src="batom-matte.jpg" alt="Batom Matte Luxo">
     <h3>Batom Matte Luxo</h3>
     <p>R$ 39,90</p>
-    <button onclick="window.open('https://wa.me/5564992187764')">Comprar</button>
+    <button onclick="window.open('https://wa.me/5564992187764?text=Tenho interesse no Batom Matte Luxo')">
+      Comprar
+    </button>
   </div>
+
+  <!-- PRODUTO 3 -->
   <div class="produto">
+    <img src="paleta-sombras.jpg" alt="Paleta de Sombras Elegance">
     <h3>Paleta de Sombras Elegance</h3>
     <p>R$ 129,90</p>
-    <button onclick="window.open('https://wa.me/5564992187764')">Comprar</button>
+    <button onclick="window.open('https://wa.me/5564992187764?text=Tenho interesse na Paleta de Sombras Elegance')">
+      Comprar
+    </button>
   </div>
+
 </section>
 
 <footer>
@@ -109,3 +136,4 @@
 
 </body>
 </html>
+
